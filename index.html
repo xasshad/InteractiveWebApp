@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Tabs</title>
+
+<!-- STYLES -->
+<link rel="stylesheet" href="stylesheet.css" />
 </head>
+
 <body>
-    
-</body>
+  <section class="section">
+    <div class="title">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Qui, provident!</p> 
+    </div>
+
+    <div class="about-center section-center">
+      <article class="about-image">
+        <img src="./green-checkboard.jpeg" alt="about picture" />
+      </article>
+      <article class="about">
+
+      <!-- BUTTON CONTAINER -->
+      <div class="button-container">
+        <button class="tab-button active" data-id="history">History</button>
+        <button class="tab-button " data-id="vision">Vision</button>
+        <button class="tab-button" data-id="goals">Goals</button>
+      </div>
+
+      <article class="about-content">
+        <!-- item 1 -->
+          <div class="content active" id="history">
+          <h4>History</h4>
+          <p>
+            Three years later, the coffin was still full of Jello.
+            The elephant didn't want to talk about the person in the room.
+            The hummingbird's wings blurred while it eagerly sipped the sugar water from the feeder.
+            Kevin embraced his ability to be at the wrong place at the wrong time.
+            The bees decided to have a mutiny against their queen.
+          </p>
+          </div>
+          <!-- end of item 1 -->
+          <!-- item 2 -->
+          <div class="content" id="vision">
+            <h4>Vision</h4>
+            <p>
+              He enjoys practicing his ballet in the bathroom.
+              When I was little I had a car door slammed shut on my hand and I still remember it quite vividly.
+              He picked up trash in his spare time to dump in his neighbor's yard.
+              There should have been a time and a place, but this wasn't it.
+              The small white buoys marked the location of hundreds of crab pots.
+            </p>
+
+            <ul>
+              <li>thing number 1</li>
+              <li>thing number 1</li>
+              <li>thing number 1</li>
+            </ul>
+
+          </div>
+          <!-- end of item 2 -->
+          <!-- item 3 -->
+            <div class="content" id="goals">
+              <h4>Goals</h4>
+              <p>
+                The underground bunker was filled with chips and candy.
+                People who insist on picking their teeth with their elbows are so annoying!
+                Normal activities took extraordinary amounts of concentration at the high altitude.
+                It was difficult for Mary to admit that most of her workout consisted of exercising poor judgment.
+                He drank life before spitting it out.
+              </p>
+            </div>
+            <!-- end of item 3 -->
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="javascript.js"></script>
+  </body>
 </html>
